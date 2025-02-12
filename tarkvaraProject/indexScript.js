@@ -15,6 +15,15 @@ document.addEventListener('DOMContentLoaded', function() {
             confirmationMessage.style.display = 'block';
 
             console.log(`Sõnum saadetud: ${name} - ${message}`);
+
+            fetch('/save-message', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ name, message })
+            })
+                .then(response => response.json())
+                .then(data => console.log('Vastus serverist:', data))
+                .catch(error => console.error('Viga:', error));
         } else {
             alert('Palun täida kõik väljad!');
         }
