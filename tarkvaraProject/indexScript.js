@@ -1,3 +1,4 @@
+alert("Head sõprapäeva ")
 document.addEventListener('DOMContentLoaded', function() {
     const form = document.getElementById('loveForm');
     const confirmationMessage = document.getElementById('confirmation');
