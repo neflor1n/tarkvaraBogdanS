@@ -107,3 +107,45 @@ button:hover {
     height: auto;
     max-width: 1000px;
 }
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes heartbeat {
+    0%, 100% {
+        transform: scale(1);
+        transform-origin: center center;
+    }
+    50% {
+        transform: scale(1.2);
+        transform-origin: center center;
+    }
+}
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
+/* Адаптивный дизайн */
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 3em;
+    }
+    .form-container {
+        padding: 20px;
+    }
+    .heart {
+        font-size: 5em;
+    }
+    .image-container img {
+        max-width: 80%;
+    }
+}
