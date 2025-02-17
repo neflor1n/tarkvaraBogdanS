@@ -6,5 +6,7 @@
   <li>Looge animeeritud emotikone, animatsioone ja liigutusi</li>
   <li>Paranda ka viga südamega klassi "heart-img" all, vormi saatmisel ulatub see tervele lehele</li>
   <li>Tehke JSON, mis salvestab kõik vormilt saadetud kirjad koos inimese nime ja sõnumiga</li>
+  <li>Vajadusel lisati uus Div "käru-kõigile". tee 14. veebruaril kõigile inimestele kaart</li>
+  <li>Lisage selle konteineri kujundus</li>
 </ol>
 
